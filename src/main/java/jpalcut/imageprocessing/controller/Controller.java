@@ -1,6 +1,5 @@
 package jpalcut.imageprocessing.controller;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -65,7 +64,7 @@ public class Controller {
             height = Integer.parseInt(heightField.getText());
         }
         catch (Exception e){
-            //Catch the wrong size of image
+            //Catch the wrong file size
             statusLabel.setText("Fill the image size");
         }
         ImageResize resize = new ImageResize(fileList, width, height);

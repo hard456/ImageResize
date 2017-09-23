@@ -40,10 +40,10 @@ public class ImageResize extends Thread {
                 //Path for new resized image
                 String path = directory.getAbsolutePath() + File.separator + file.getName();
 
-                //Initialization for writing file
+                //Initialization writer
                 ImageWriter writer = ImageIO.getImageWritersByFormatName("jpg").next();
                 ImageWriteParam param = writer.getDefaultWriteParam();
-                param.setCompressionMode(ImageWriteParam.MODE_EXPLICIT); // Needed see javadoc
+                param.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
                 param.setCompressionQuality(1.0F);
                 ImageOutputStream ios = ImageIO.createImageOutputStream(new File(path));
                 writer.setOutput(ios);
