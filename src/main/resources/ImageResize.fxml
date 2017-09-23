@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" minHeight="150" minWidth="100" prefHeight="324.0" prefWidth="430.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jpalcut.imageprocessing.controller.Controller">
+   <children>
+      <Pane prefHeight="324.0" prefWidth="430.0">
+         <Label layoutX="63.0" layoutY="139.0" text="Width" />
+         <TextField fx:id="widthField" layoutX="63.0" layoutY="159.0" />
+         <Label layoutX="218.0" layoutY="139.0" text="Height" />
+         <TextField fx:id="heightField" layoutX="218.0" layoutY="159.0" />
+         <Label layoutX="135.0" layoutY="53.0" prefHeight="78.0" prefWidth="159.0" text="Image resize" textAlignment="CENTER">
+            <font>
+               <Font name="Berlin Sans FB" size="28.0" />
+            </font>
+         </Label>
+         <Button fx:id="selectImages" layoutX="218.0" layoutY="197.0" mnemonicParsing="false" onAction="#selectImages" prefHeight="25.0" prefWidth="149.0" text="Choose files" />
+         <Button fx:id="resizeImages" disable="true" layoutX="62.0" layoutY="250.0" mnemonicParsing="false" onAction="#resizeImages" prefHeight="25.0" prefWidth="307.0" text="Process resizing" />
+         <Label fx:id="imageCount" alignment="CENTER" layoutX="61.0" layoutY="202.0" prefHeight="17.0" prefWidth="149.0" text="No images" textAlignment="CENTER" />
+         <Separator layoutX="66.0" layoutY="235.0" prefHeight="3.0" prefWidth="299.0" />
+         <Label fx:id="statusLabel" alignment="CENTER" layoutX="64.0" layoutY="285.0" prefHeight="25.0" prefWidth="307.0" />
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
