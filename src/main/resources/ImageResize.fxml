@@ -14,19 +14,19 @@
    <children>
       <Pane prefHeight="324.0" prefWidth="430.0">
          <Label layoutX="63.0" layoutY="139.0" text="Width" />
-         <TextField fx:id="widthField" layoutX="63.0" layoutY="159.0" />
+         <TextField fx:id="widthField" layoutX="63.0" layoutY="159.0" maxWidth="150" minWidth="150" />
          <Label layoutX="218.0" layoutY="139.0" text="Height" />
-         <TextField fx:id="heightField" layoutX="218.0" layoutY="159.0" />
+         <TextField fx:id="heightField" layoutX="218.0" layoutY="159.0" maxWidth="150" minWidth="150" />
          <Label layoutX="135.0" layoutY="53.0" prefHeight="78.0" prefWidth="159.0" text="Image resize" textAlignment="CENTER">
             <font>
                <Font name="Berlin Sans FB" size="28.0" />
             </font>
          </Label>
-         <Button fx:id="selectImages" layoutX="218.0" layoutY="197.0" mnemonicParsing="false" onAction="#selectImages" prefHeight="25.0" prefWidth="149.0" text="Choose files" />
-         <Button fx:id="resizeImages" disable="true" layoutX="62.0" layoutY="250.0" mnemonicParsing="false" onAction="#resizeImages" prefHeight="25.0" prefWidth="307.0" text="Process resizing" />
-         <Label fx:id="imageCount" alignment="CENTER" layoutX="61.0" layoutY="202.0" prefHeight="17.0" prefWidth="149.0" text="No images" textAlignment="CENTER" />
-         <Separator layoutX="66.0" layoutY="235.0" prefHeight="3.0" prefWidth="299.0" />
-         <Label fx:id="statusLabel" alignment="CENTER" layoutX="64.0" layoutY="285.0" prefHeight="25.0" prefWidth="307.0" />
+         <Button fx:id="selectImages" layoutX="218.0" layoutY="197.0" mnemonicParsing="false" onAction="#selectImages" prefHeight="25.0" prefWidth="149.0" text="Choose files" minWidth="150" maxWidth="150" />
+         <Button fx:id="resizeImages" disable="true" layoutX="62.0" layoutY="250.0" mnemonicParsing="false" onAction="#resizeImages" prefHeight="25.0" prefWidth="307.0" text="Process resizing" minWidth="305" maxWidth="305" />
+         <Label fx:id="imageCount" alignment="CENTER" layoutX="61.0" layoutY="202.0" prefHeight="17.0" prefWidth="149.0" text="No images" textAlignment="CENTER" minWidth="150" maxWidth="150" />
+         <Separator layoutX="62.0" layoutY="235.0" prefHeight="3.0" prefWidth="299.0" minWidth="305" maxWidth="305"/>
+         <Label fx:id="statusLabel" alignment="CENTER" layoutX="64.0" layoutY="285.0" prefHeight="25.0" prefWidth="307.0" minWidth="305" maxWidth="305" />
       </Pane>
    </children>
    <columnConstraints>
