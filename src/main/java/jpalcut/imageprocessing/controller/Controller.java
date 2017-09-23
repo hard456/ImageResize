@@ -53,8 +53,6 @@ public class Controller {
 
         selectImages.setDisable(true);
         resizeImages.setDisable(true);
-        widthField.setDisable(true);
-        heightField.setDisable(true);
 
         //New width and height
         int width = 0, height = 0;
@@ -66,7 +64,14 @@ public class Controller {
         catch (Exception e){
             //Catch the wrong file size
             statusLabel.setText("Fill the image size");
+            selectImages.setDisable(false);
+            resizeImages.setDisable(false);
+            return;
         }
+
+        widthField.setDisable(true);
+        heightField.setDisable(true);
+
         ImageResize resize = new ImageResize(fileList, width, height);
         resize.start();
 
