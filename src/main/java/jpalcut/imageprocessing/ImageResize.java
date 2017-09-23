@@ -13,6 +13,7 @@ import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -50,6 +51,9 @@ public class ImageResize extends Thread {
 
                 //Write file in directory
                 writer.write(null, new IIOImage(image, null, null), param);
+
+                //Close output stream
+                ios.close();
 
                 //Loading animation
                 Platform.runLater(new Runnable() {
